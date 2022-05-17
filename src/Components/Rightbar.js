@@ -3,8 +3,8 @@ import React from 'react'
 
 function Rightbar() {
   return (
-    <Box flex={2} p={2} sx={{ display: {xs:'none' , sm:'block'}}}>
-      <Box position='fixed' width={350}>
+    <Box flex={2} p={2} sx={{ display: {xs:'none' , md:'block'}, marginLeft:{md:'0px !important', lg:'16px !important'} }}>
+      <Box position='fixed' sx={{width:{md:'285px', lg:'350px'}}} >
         <Typography variant='h6' fontWeight={100}>Online Friends</Typography>
         <AvatarGroup max={6} sx={{justifyContent:'flex-end'}}>
           <Avatar alt="Remy Sharp" src="https://images.pexels.com/photos/5704720/pexels-photo-5704720.jpeg?cs=srgb&dl=pexels-anastasia-shuraeva-5704720.jpg&fm=jpg" />
@@ -17,7 +17,7 @@ function Rightbar() {
         </AvatarGroup>
         <Typography variant='h6' fontWeight={100} mt={2} mb={2}>Latest Photos</Typography>
 
-        <ImageList cols={3} rowHeight={120} gap = {5}>
+        <ImageList cols={3} rowHeight={100} gap = {5} sx={{overflow:'hidden'}}>
         <ImageListItem>
             <img
               src={`https://images.pexels.com/photos/10007531/pexels-photo-10007531.jpeg?w=164&h=164&fit=crop&auto=format`}

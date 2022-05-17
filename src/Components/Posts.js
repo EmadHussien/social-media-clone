@@ -5,11 +5,13 @@ import { red } from '@mui/material/colors'
 
 function Posts() {
   return (
-    <Card sx={{marginBottom:'20px' , margin:{sm:5}}}>
+    <Card sx={{marginBottom:'20px' , margin:{sm:1.25 , lg:3}}}> 
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor:red[700] }} aria-label="recipe">
-            E
+          <Avatar 
+          alt="Trevor Henderson"
+          src="https://i.ibb.co/kmjGHMk/mm.jpg"
+          sx={{ bgcolor:red[700] }} aria-label="recipe">
           </Avatar>
         }
         action={

@@ -16,7 +16,7 @@ function Sidebar({setMode,mode}) {
     <Box 
       flex={1} 
       p={2} 
-      sx={{ display:{xs:'none' , sm:'block'}} }>
+      sx={{ display:{xs:'none' , lg:'block'}} }>
       <Box position='fixed'>
 
         <List>
